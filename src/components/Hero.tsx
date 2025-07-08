@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.1, ease: easeOut }}
-        className="absolute top-2 left-6 z-20 px-4 py-1 rounded-lg bg-white/10 border border-green-400 shadow-lg text-green-400 font-semibold text-sm lg:text-base drop-shadow-md backdrop-blur-sm"
+        className="absolute top-2 left-2 z-20 px-2 py-0.5 rounded-lg bg-white/10 border border-green-400 shadow-lg text-green-400 font-semibold text-xs sm:text-sm lg:text-base drop-shadow-md backdrop-blur-sm"
       >
         Available for Hire
       </motion.div>
@@ -162,14 +162,14 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-2 sm:px-6 relative z-10">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-6 lg:gap-12 items-center mt-14 lg:mt-0">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: easeOut }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left space-y-4 mb-6 lg:mb-0"
           >
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
