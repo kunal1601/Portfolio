@@ -169,7 +169,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: easeOut }}
-            className="text-center lg:text-left space-y-4 mb-6 lg:mb-0"
+            className="text-center lg:text-left space-y-4 mb-6 lg:mb-0 lg:-mt-8"
           >
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -285,7 +285,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, x: 100, scale: 0.8 }}
             animate={{ opacity: 1, x: 0, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.4, ease: easeOut }}
-            className="flex flex-col items-center mt-[-80px]"
+            className="flex flex-col items-center mt-8 lg:mt-[-80px]"
           >
             <div className="relative">
               <motion.img
@@ -302,7 +302,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.1, ease: easeOut }}
-              className="flex gap-6 justify-center mt-6"
+              className="flex gap-6 justify-center mt-4"
             >
               <motion.a
                 href="https://github.com/kunal1601"
