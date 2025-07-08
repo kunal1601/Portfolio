@@ -333,7 +333,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, x: 30, y: -30 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 1, delay: 1.6, ease: easeOut }}
-          className="absolute top-8 right-8 z-20 opacity-50 hover:opacity-80 transition-opacity duration-300"
+          className="absolute top-8 right-8 z-20 opacity-50 hover:opacity-80 transition-opacity duration-300 hidden sm:block"
         >
           <motion.div
             animate={{
