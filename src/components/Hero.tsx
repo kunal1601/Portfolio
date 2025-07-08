@@ -169,7 +169,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: easeOut }}
-            className="text-center lg:text-left space-y-4 mb-6 lg:mb-0 lg:-mt-8"
+            className="text-center lg:text-left space-y-4 mb-6 lg:mb-0 lg:-mt-16"
           >
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
@@ -297,35 +297,47 @@ const Hero: React.FC = () => {
               />
             </div>
 
-            {/* Social Links */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.1, ease: easeOut }}
-              className="flex gap-6 justify-center mt-4"
-            >
-              <motion.a
-                href="https://github.com/kunal1601"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-effect p-4 rounded-full hover:bg-white/20 transition-all duration-300 glow-on-hover border border-white/30 float-icon"
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                whileTap={{ scale: 0.9 }}
+            {/* Down Arrow and Social Links - Responsive Stack */}
+            <div className="flex flex-col gap-4 items-center w-full lg:flex-row lg:gap-8 lg:items-end mt-6">
+              {/* Down Arrow (centered on mobile, left on desktop) */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1, ease: easeOut }}
+                className="flex justify-center lg:justify-end w-full"
               >
-                <Github size={28} className="text-white" />
-              </motion.a>
-              <motion.a
-                href="https://www.linkedin.com/in/kunal1601"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="glass-effect p-4 rounded-full hover:bg-white/20 transition-all duration-300 glow-on-hover border border-white/30 float-icon"
-                whileHover={{ scale: 1.1, rotate: -5 }}
-                whileTap={{ scale: 0.9 }}
-                style={{ animationDelay: '1s' }}
+                <ArrowDown size={36} className="text-white/70" />
+              </motion.div>
+              {/* Social Links */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1.1, ease: easeOut }}
+                className="flex gap-6 justify-center"
               >
-                <Linkedin size={28} className="text-white" />
-              </motion.a>
-            </motion.div>
+                <motion.a
+                  href="https://github.com/kunal1601"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-effect p-4 rounded-full hover:bg-white/20 transition-all duration-300 glow-on-hover border border-white/30 float-icon"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Github size={28} className="text-white" />
+                </motion.a>
+                <motion.a
+                  href="https://www.linkedin.com/in/kunal1601"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="glass-effect p-4 rounded-full hover:bg-white/20 transition-all duration-300 glow-on-hover border border-white/30 float-icon"
+                  whileHover={{ scale: 1.1, rotate: -5 }}
+                  whileTap={{ scale: 0.9 }}
+                  style={{ animationDelay: '1s' }}
+                >
+                  <Linkedin size={28} className="text-white" />
+                </motion.a>
+              </motion.div>
+            </div>
 
 
           </motion.div>
