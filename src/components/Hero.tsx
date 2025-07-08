@@ -245,13 +245,14 @@ const Hero: React.FC = () => {
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="w-10 h-10" />
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-10 h-10" />
             </motion.div>
-
+            {/* Spacer for desktop only */}
+            <div className="hidden lg:block h-32"></div>
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.9, ease: easeOut }}
-              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-8 mt-0 lg:mt-56"
+              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-8 mt-0"
             >
               <motion.button
                 onClick={() => scrollToSection('projects')}
