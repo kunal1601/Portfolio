@@ -29,12 +29,14 @@ function App() {
           <span className="mr-2">&lt;/&gt;</span>
         </div>
         {/* Right: Nav links */}
-        <div className="flex gap-7 text-white text-base font-normal">
-          <a href="#about" className="hover:text-blue-300 transition-colors duration-200">About</a>
-          <a href="#skills" className="hover:text-blue-300 transition-colors duration-200">Skills</a>
-          <a href="#projects" className="hover:text-blue-300 transition-colors duration-200">Projects</a>
-          <a href="#experience" className="hover:text-blue-300 transition-colors duration-200">Experience</a>
-          <a href="#contact" className="hover:text-blue-300 transition-colors duration-200">Contact</a>
+        <div className="flex gap-7 text-white text-base font-normal sm:gap-7 gap-3">
+          <div className="sm:bg-transparent bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg px-3 py-2 flex gap-3 sm:gap-7 items-center">
+            <a href="#about" className="hover:text-blue-300 transition-colors duration-200">About</a>
+            <a href="#skills" className="hover:text-blue-300 transition-colors duration-200">Skills</a>
+            <a href="#projects" className="hover:text-blue-300 transition-colors duration-200">Projects</a>
+            <a href="#experience" className="hover:text-blue-300 transition-colors duration-200">Experience</a>
+            <a href="#contact" className="hover:text-blue-300 transition-colors duration-200">Contact</a>
+          </div>
         </div>
       </nav>
       <div className="min-h-screen scroll-smooth pt-16">
