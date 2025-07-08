@@ -143,7 +143,7 @@ const About: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
                 Passionate about using automation and cloud tools to build scalable and cost-effective IT infrastructure solutions.
-                I thrive in collaborative environments and enjoy solving complex technical challenges.
+                I thrive in collaborative environment and enjoy solving complex technical challenges.
               </motion.p>
               {/* Animated stats */}
               <motion.div 

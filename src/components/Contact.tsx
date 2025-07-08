@@ -165,7 +165,7 @@ const Contact: React.FC = () => {
                       animate={{ opacity: [0.8, 1, 0.8] }}
                       transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                     >
-                      Available for Remote Work
+                      India
                     </motion.p>
                   </div>
                 </motion.div>

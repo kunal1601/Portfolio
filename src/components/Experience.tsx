@@ -4,10 +4,10 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const achievements = [
-    'Automated EC2 infrastructure provisioning using Terraform',
-    'Configured Load Balancers and Auto Scaling Groups for high availability',
+    'Automated EC2 infrastructure provisioning using Terraform.',
+    'Configured Load Balancers and Auto Scaling Groups for high availability.',
     'Cleaned CMDB data and improved accuracy in ServiceNow',
-    'Mapped Configuration Items to incidents to reduce resolution time'
+    'Mapped Configuration Items to incidents to reduce resolution time.'
   ];
 
   return (
@@ -43,7 +43,7 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="flex items-center text-gray-600">
                   <MapPin size={16} className="mr-2" />
-                  <span>Remote</span>
+                  <span>Hybrid</span>
                 </div>
               </div>
               
