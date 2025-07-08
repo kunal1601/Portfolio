@@ -47,7 +47,7 @@ export const projects: Project[] = [
     category: 'Kubernetes',
     linkedinUrl: 'https://www.linkedin.com/pulse/building-jenkins-master-agent-architecture-kubernetes-kunal-sharma-2ousc',
     githubUrl: 'https://github.com/kunal1601/Jenkins_Master-agent-setup-.git',
-    imageUrl: '/src/assets/kubernetes-1.png',
+    imageUrl: '/assets/kubernetes-1.png',
     tags: ['Jenkins', 'Kubernetes', 'CI/CD', 'Architecture']
   },
   {
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     category: 'Jenkins',
     linkedinUrl: 'https://www.linkedin.com/pulse/setting-up-jenkins-master-agent-architecture-using-docker-sharma-4e7rc',
     githubUrl: 'https://github.com/kunal1601/Jenkins_Master-agent-setup-.git',
-    imageUrl: '/src/assets/docker-3.jpeg',
+    imageUrl: '/assets/docker-3.jpeg',
     tags: ['Jenkins', 'Docker', 'CI/CD', 'Automation']
   },
   {
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     category: 'Jenkins',
     linkedinUrl: 'https://www.linkedin.com/posts/kunal1601_jenkins-cicd-activity-7345041317858635776-YEct',
     githubUrl: 'https://lnkd.in/gWADvpt4',
-    imageUrl: '/src/assets/jenkins-1.png',
+    imageUrl: '/assets/jenkins-1.png',
     tags: ['Jenkins', 'Docker', 'CI/CD', 'DevOps']
   },
   {
