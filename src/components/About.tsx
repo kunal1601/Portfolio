@@ -43,6 +43,36 @@ const About: React.FC = () => {
   return (
     <>
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          animate={{ 
+            x: [0, 100, 0],
+            y: [0, -50, 0],
+            rotate: [0, 180, 360],
+          }}
+          transition={{ 
+            duration: 30, 
+            repeat: Infinity, 
+            ease: "linear" 
+          }}
+          className="absolute top-20 right-10 w-32 h-32 bg-blue-200/20 rounded-full blur-xl"
+        />
+        <motion.div
+          animate={{ 
+            x: [0, -80, 0],
+            y: [0, 60, 0],
+            scale: [1, 1.5, 1],
+          }}
+          transition={{ 
+            duration: 25, 
+            repeat: Infinity, 
+            ease: easeInOut 
+          }}
+          className="absolute bottom-20 left-10 w-40 h-40 bg-purple-200/20 rounded-full blur-xl"
+        />
+      </div>
+
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial="hidden"
