@@ -333,7 +333,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0, x: 30, y: -30 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 1, delay: 1.6, ease: easeOut }}
-          className="absolute top-8 right-8 z-20"
+          className="absolute top-8 right-8 z-20 opacity-50 hover:opacity-80 transition-opacity duration-300"
         >
           <motion.div
             animate={{
@@ -349,7 +349,7 @@ const Hero: React.FC = () => {
           >
             {/* Computer Screen */}
             <div className="bg-gradient-to-br from-gray-800/90 to-gray-900/90 backdrop-blur-md border border-gray-600/50 rounded-lg p-3 shadow-2xl">
-              <Monitor size={32} className="text-green-400 drop-shadow-lg" />
+              <Monitor size={32} className="text-green-400 drop-shadow-lg opacity-80" />
             </div>
             
             {/* Code Lines Animation */}
