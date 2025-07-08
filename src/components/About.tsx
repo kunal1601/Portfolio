@@ -147,52 +147,52 @@ const About: React.FC = () => {
               </motion.p>
               {/* Animated stats */}
               <motion.div 
-                className="grid grid-cols-3 gap-6 mt-8"
+                className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-8"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <motion.div 
-                  className="text-center p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
+                  className="text-center p-3 sm:p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
                   whileHover={{ scale: 1.05, y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
                   <motion.div 
-                    className="text-2xl font-bold text-blue-600"
+                    className="text-xl sm:text-2xl font-bold text-blue-600"
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ duration: 2, repeat: Infinity }}
                   >
                     1+
                   </motion.div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Years Experience</div>
                 </motion.div>
                 <motion.div 
-                  className="text-center p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
+                  className="text-center p-3 sm:p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
                   whileHover={{ scale: 1.05, y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
                   <motion.div 
-                    className="text-2xl font-bold text-purple-600"
+                    className="text-xl sm:text-2xl font-bold text-purple-600"
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
                   >
                     8+
                   </motion.div>
-                  <div className="text-sm text-gray-600">Projects</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Projects</div>
                 </motion.div>
                 <motion.div 
-                  className="text-center p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
+                  className="text-center p-3 sm:p-4 bg-white/70 rounded-xl shadow-lg backdrop-blur-sm"
                   whileHover={{ scale: 1.05, y: -5 }}
                   transition={{ duration: 0.3 }}
                 >
                   <motion.div 
-                    className="text-2xl font-bold text-teal-600"
+                    className="text-xl sm:text-2xl font-bold text-teal-600"
                     animate={{ scale: [1, 1.1, 1] }}
                     transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                   >
                     6+
                   </motion.div>
-                  <div className="text-sm text-gray-600">Technologies</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Technologies</div>
                 </motion.div>
               </motion.div>
             </motion.div>
