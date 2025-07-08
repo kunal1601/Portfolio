@@ -251,7 +251,7 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.9, ease: easeOut }}
-              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-8"
+              className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mb-8 mt-0 lg:mt-20"
             >
               <motion.button
                 onClick={() => scrollToSection('projects')}
