@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
 import Experience from './components/Experience';
@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Education from './components/Education';
 
 function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
       {/* Thin Gradient Top Line */}
@@ -28,16 +29,36 @@ function App() {
         <div className="text-blue-300 text-xl font-mono font-normal flex items-center select-none">
           <span className="mr-2">&lt;/&gt;</span>
         </div>
-        {/* Right: Nav links */}
-        <div className="flex gap-7 text-white text-base font-normal sm:gap-7 gap-3">
-          <div className="sm:bg-transparent bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg px-3 py-2 flex gap-3 sm:gap-7 items-center">
-            <a href="#about" className="hover:text-blue-300 transition-colors duration-200">About</a>
-            <a href="#skills" className="hover:text-blue-300 transition-colors duration-200">Skills</a>
-            <a href="#projects" className="hover:text-blue-300 transition-colors duration-200">Projects</a>
-            <a href="#experience" className="hover:text-blue-300 transition-colors duration-200">Experience</a>
-            <a href="#contact" className="hover:text-blue-300 transition-colors duration-200">Contact</a>
-          </div>
+        {/* Right: Nav links for desktop */}
+        <div className="hidden sm:flex gap-7 text-white text-base font-normal">
+          <a href="#about" className="hover:text-blue-300 transition-colors duration-200">About</a>
+          <a href="#skills" className="hover:text-blue-300 transition-colors duration-200">Skills</a>
+          <a href="#projects" className="hover:text-blue-300 transition-colors duration-200">Projects</a>
+          <a href="#experience" className="hover:text-blue-300 transition-colors duration-200">Experience</a>
+          <a href="#contact" className="hover:text-blue-300 transition-colors duration-200">Contact</a>
         </div>
+        {/* Hamburger for mobile */}
+        <button
+          className="sm:hidden flex flex-col justify-center items-center w-10 h-10 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Open menu"
+        >
+          <span className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${mobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-white mb-1 transition-all duration-300 ${mobileMenuOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${mobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+        </button>
+        {/* Mobile Dropdown Menu */}
+        {mobileMenuOpen && (
+          <div className="fixed inset-0 z-40 flex flex-col items-center bg-[#0a2342]/95 backdrop-blur-sm animate-fadeIn">
+            <div className="w-full flex flex-col items-center mt-20 gap-6 text-white text-lg font-medium">
+              <a href="#about" className="hover:text-blue-300 transition-colors duration-200" onClick={() => setMobileMenuOpen(false)}>About</a>
+              <a href="#skills" className="hover:text-blue-300 transition-colors duration-200" onClick={() => setMobileMenuOpen(false)}>Skills</a>
+              <a href="#projects" className="hover:text-blue-300 transition-colors duration-200" onClick={() => setMobileMenuOpen(false)}>Projects</a>
+              <a href="#experience" className="hover:text-blue-300 transition-colors duration-200" onClick={() => setMobileMenuOpen(false)}>Experience</a>
+              <a href="#contact" className="hover:text-blue-300 transition-colors duration-200" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            </div>
+          </div>
+        )}
       </nav>
       <div className="min-h-screen scroll-smooth pt-16">
         <Suspense fallback={<div className="w-full flex justify-center items-center py-20 text-xl text-blue-700">Loading...</div>}>
