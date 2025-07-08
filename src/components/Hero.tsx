@@ -13,6 +13,15 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Available for Hire badge in top left */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.1, ease: easeOut }}
+        className="absolute top-2 left-6 z-20 px-4 py-1 rounded-lg bg-white/10 border border-green-400 shadow-lg text-green-400 font-semibold text-sm lg:text-base drop-shadow-md backdrop-blur-sm"
+      >
+        Available for Hire
+      </motion.div>
       {/* Animated Floating Circles Background */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Small Floating Circles - All Over */}
@@ -162,14 +171,6 @@ const Hero: React.FC = () => {
             transition={{ duration: 1, ease: easeOut }}
             className="text-center lg:text-left"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.15, ease: easeOut }}
-              className="inline-block -mt-32 mb-4 px-3 py-1 rounded-lg bg-white/10 border border-green-400 shadow-lg text-green-400 font-semibold text-sm lg:text-base drop-shadow-md backdrop-blur-sm"
-            >
-              Available for Hire
-            </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}

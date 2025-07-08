@@ -17,7 +17,7 @@ export const projects: Project[] = [
     category: 'Docker',
     linkedinUrl: 'https://www.linkedin.com/pulse/automating-memory-usage-monitoring-alerts-linux-simple-kunal-sharma-aeegc',
     githubUrl: 'https://github.com/kunal1601/memory-usage-monitor-docker',
-    imageUrl: '/src/assets/docker-1.png',
+    imageUrl: '/assets/docker-1.png',
     tags: ['Docker', 'Linux', 'Monitoring', 'Alerts']
   },
   {
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     category: 'Docker',
     linkedinUrl: 'https://www.linkedin.com/pulse/deployed-dockerized-web-app-using-ansible-playbook-cluster-sharma-66xcc',
     githubUrl: 'https://github.com/kunal1601/web_app-deployment-Ansible-',
-    imageUrl: '/src/assets/docker-2.png',
+    imageUrl: '/assets/docker-2.png',
     tags: ['Docker', 'Ansible', 'Kubernetes', 'Flask']
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     category: 'Ansible',
     linkedinUrl: 'https://www.linkedin.com/pulse/setting-up-ansible-cluster-docker-kubernetes-kunal-sharma-jghgc',
     githubUrl: 'https://github.com/kunal1601/Ansible_cluster-Docker-K8s.git',
-    imageUrl: '/src/assets/ansible-1.jpeg',
+    imageUrl: '/assets/ansible-1.jpeg',
     tags: ['Ansible', 'Docker', 'Kubernetes', 'Automation']
   },
   {
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     category: 'AWS',
     linkedinUrl: 'https://www.linkedin.com/pulse/introducing-nat-gateway-provide-internet-access-instances-sharma',
     githubUrl: 'https://github.com/kunal1601/NAT-GW.git',
-    imageUrl: '/src/assets/nat-1.jpeg',
+    imageUrl: '/assets/nat-1.jpeg',
     tags: ['AWS', 'Networking', 'NAT Gateway', 'Security']
   },
   {
@@ -87,7 +87,7 @@ export const projects: Project[] = [
     category: 'AWS',
     linkedinUrl: 'https://www.linkedin.com/pulse/introducing-aws-rds-launching-wordpress-kubernetes-having-sharma',
     githubUrl: 'https://github.com/kunal1601/AWS_RDS.git',
-    imageUrl: '/src/assets/rds-1.png',
+    imageUrl: '/assets/rds-1.png',
     tags: ['AWS', 'RDS', 'Kubernetes', 'WordPress']
   }
 ];
