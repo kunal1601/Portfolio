@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
           className="text-center mb-16"
         >
           <motion.h2 
-            className="text-5xl font-bold text-gray-900 mb-4"
+            className="text-5xl font-bold text-gray-900 mb-4 leading-tight pb-1"
             animate={{ 
               backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
             }}

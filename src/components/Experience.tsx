@@ -6,7 +6,7 @@ const Experience: React.FC = () => {
   const achievements = [
     'Automated EC2 infrastructure provisioning using Terraform.',
     'Configured Load Balancers and Auto Scaling Groups for high availability.',
-    'Cleaned CMDB data and improved accuracy in ServiceNow',
+    'Cleaned CMDB data and improved accuracy in ServiceNow.',
     'Mapped Configuration Items to incidents to reduce resolution time.'
   ];
 
